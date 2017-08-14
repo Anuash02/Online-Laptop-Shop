@@ -51,7 +51,7 @@
 
 <style>
 body {
-	background-color: #ac5353;
+	background-color: 	#ac5353;
 }
 </style>
 

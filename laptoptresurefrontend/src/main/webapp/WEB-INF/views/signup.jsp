@@ -3,7 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <style>
 body {
-	background-color: #ffe6e6;
+	background-color: 	#ac5353;
 }
 </style>
 
