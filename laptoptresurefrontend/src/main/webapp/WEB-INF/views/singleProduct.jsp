@@ -40,7 +40,7 @@ body {
 		</div>
 
 		<!-- Display the product Description -->
-		<div class="col-xs-12 col-sm-8">
+		<div class="col-md-6">
 			<h2 style="font-size: 20px;">${product.prodname}</h2>
 			<hr />
 			<p>${product.proddesc}</p>
@@ -51,9 +51,7 @@ body {
 				</h4>
 				<hr />
 
-				<h6 style="font-size: 20px;">Quantity Available:
-					${product.quantity}</h6>
-				<hr />
+				
 
 				<c:choose>
 					<c:when test="${product.quantity <1}">
@@ -76,9 +74,10 @@ body {
 					<a href="javascript:void(0)" class="btn btn-success disabled"><strike>Add
 							to Cart</strike></a>&#160;&#160;&#160;
 							
-							<a href="${contextRoot}/show/all/products" class="btn btn-info">Back</a>
+							
 
 				</c:when>
+				
 				
 				
 
@@ -96,17 +95,19 @@ body {
 
 			</c:choose>
 			</security:authorize>
+			
 			<security:authorize access="hasAuthority('ADMIN')">
             
                          <a class="btn btn-warning" href="${contextRoot}/manage/${product.prodid}/product">Edit</a>               
          </security:authorize>
 
 
-			<a href="${contextRoot}/show/all/products" class="btn btn-info">Back</a>
-
-
-
-
-
-
+			<a class="btn btn-primary" href="${contextRoot}/show/all/products">
+           Back</a>
+			
+		</div>
+		
 	</div>
+	
+</div>
+		

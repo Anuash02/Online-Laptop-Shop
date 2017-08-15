@@ -17,6 +17,7 @@ body {
 
 
 				<div class="col-lg-12">
+				
 
 					<!-- for All Products -->
 					<c:if test="${userClickAllProducts == true }">
@@ -24,6 +25,7 @@ body {
 						<script>
 							window.catid = '';
 						</script>
+						
 
 						<ol class="breadcrumb">
 
@@ -32,6 +34,7 @@ body {
 							<li class="active">All Products</li>
 
 						</ol>
+						
 					</c:if>
 
 
@@ -55,6 +58,7 @@ body {
 
 						</ol>
 					</c:if>
+					
 
 				</div>
 				<!-- End of col-lg-12 class -->

@@ -112,15 +112,17 @@ body {
 						</div>
   
   <!-- for Supplier Id. -->
-						<div class="form-group">
+  
+						 <!--<div class="form-group">
 							<!-- Start of form-group class -->
+							<!-- 
 							<label class="control-label col-md-4" for="supid" class="active">
 								Select Supplier : </label>
 							<div class="col-md-8">
-								<!-- Start of second col-md-8 class -->
-
+								<!-- Start of second col-md-8 class -->-->
+                               <!-- 
 								<sf:select class="form-control" path="supid" id="supid"
-									items="${supplier}" itemLabel="supname" itemValue="supid" />
+									items="${supplier}" itemLabel="supname" itemValue="supid" /> --> 
 						
 									
 									
