@@ -120,9 +120,14 @@ body {
    <%@include file="cart.jsp" %>
 </c:if>
 
-<!-- Load Only When user Click for checkout -->
+<!-- Load Only When user Click for order -->
 <c:if test="${userClickOrder == true}">
    <%@include file="Order.jsp" %>
+</c:if>
+
+<!-- Load Only When user Click for Checkout confirmation -->
+<c:if test="${userClickConfirmOrder == true}">
+  <%@include file="thankyou.jsp" %>
 </c:if>
 			
 

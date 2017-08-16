@@ -53,7 +53,7 @@ public String showManageProducts(@RequestParam(name = "operation" , required = f
 		// set few of the fields
 		newProduct.setSupid(0);
 		
-		m.addAttribute("product" , newProduct) ; // manageProducts.jsp ka modelAttribute name 
+		m.addAttribute("product" , newProduct) ; // here product has come from manageProducts.jsp  
 		
 		if(operation != null) {
 			
@@ -70,7 +70,7 @@ public String showManageProducts(@RequestParam(name = "operation" , required = f
 	@RequestMapping(value="/{prodid}/product", method=RequestMethod.GET)
 	public String showEditProducts(@PathVariable int prodid , Model m ) {
 		
-		System.out.println("showManageProducts method going to manageProducts.jsp from from this controller");
+		System.out.println("showManageProducts method going to manageProducts.jsp from this controller");
 		
 		
 		System.out.println("Edit and update the product");

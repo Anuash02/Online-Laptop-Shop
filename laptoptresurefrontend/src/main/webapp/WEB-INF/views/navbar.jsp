@@ -4,7 +4,9 @@
 <nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
+               
                 <a class="navbar-brand" href="${contextRoot}/home">LAPTOP TREASURE</a>
+               
                 
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -42,12 +44,7 @@
                   </li>
                  
                   
-                  <li>
-			<c:if test="${pageContext.request.userPrincipal.name!=null }">
-			<a href="">Welcome ${pageContext.request.userPrincipal.name }</a>
-			</c:if>
-		</li>
-		
+                 
 		
 		<li>
 		
@@ -79,6 +76,14 @@
                     <li id=login><a href="${contextRoot}/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                   </ul>
                   </c:if>
+                  
+                  
+                   <li>
+			<c:if test="${pageContext.request.userPrincipal.name!=null }">
+			<a href="">Welcome ${pageContext.request.userPrincipal.name }</a>
+			</c:if>
+		</li>
+		
                   
                    <c:if test="${pageContext.request.userPrincipal.name!=null }">
                    <li id=logout><a href="${contextRoot}/j_spring_security_logout">Logout</a></li>

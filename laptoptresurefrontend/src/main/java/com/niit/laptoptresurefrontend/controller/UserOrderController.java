@@ -46,7 +46,7 @@ public class UserOrderController
 		{
 			ModelAndView mv=new ModelAndView("index");	
 			   mv.addObject("userClickConfirmOrder", true);
-			   mv.addObject("title", "Visit Again!");
+			   mv.addObject("title", "Thanks for Shopping!");
 			   
 			   model.addAttribute("order",order);
 			  
