@@ -184,10 +184,10 @@ $(function()
   	        			        	   var str = '';
   	        			        	// str += '<a href="'+window.contextRoot+'/manage/'+data+'/product" class="btn btn-primary btn-xs">';
   	        			        	str += '<a href="'+window.contextRoot+ '/manage/'+data+'/product" class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span></a>&#160;';
-	        			        	 // str += '<i class="material-icons">mode_edit</i></a>&#160;';
+	        			        
 	        			        	  
 	        			        	 str += '<a href="'+window.contextRoot+'/manage/delete/'+data+'/product" class="btn btn-primary"><span class="glyphicon glyphicon-trash"></span></a>&#160;';
-	        			        	// str +='<i class="material-icons">delete</i></a>';
+	        			        	
 	        			        	             
 	        			        	   return str;
 	        			        	   

@@ -72,7 +72,7 @@
                 
                 <ul class="nav navbar-nav navbar-right">
                 <c:if test="${pageContext.request.userPrincipal.name==null }">
-                    <li><a href="${contextRoot}/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                    <li id="register"><a href="${contextRoot}/register/newUser"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
                     <li id=login><a href="${contextRoot}/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                   </ul>
                   </c:if>

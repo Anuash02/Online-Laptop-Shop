@@ -75,7 +75,7 @@ public class PageController
 		return mv;
 	}*/
 	
-	@RequestMapping(value= "/signup")
+	/*@RequestMapping(value= "/signup")
 	public  ModelAndView showSignUp()
    {
   		ModelAndView mv=new ModelAndView("index");
@@ -83,7 +83,7 @@ public class PageController
  	   mv.addObject("title","Sign Up");
  	   mv.addObject("userClickSignUp",true);
  		return mv;   
-   }
+   }*/
 	
 /*This is for Login*/
   	

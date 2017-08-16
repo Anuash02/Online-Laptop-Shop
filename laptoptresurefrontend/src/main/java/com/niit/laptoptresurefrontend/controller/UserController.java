@@ -27,9 +27,10 @@ public class UserController
 	@RequestMapping(value = "/newUser",method=RequestMethod.GET)
 	 public ModelAndView showUser(@RequestParam(name="operation",required=false)String operation)
 	{
+		
 		ModelAndView mv = new ModelAndView("index");
 		
-		mv.addObject("userClickSignup", true);
+		mv.addObject("userClickSignUp", true);
 		mv.addObject("title", "Registration");
 		UserDetails userDetails = new UserDetails();
 		//Set the few fields
@@ -46,7 +47,8 @@ public class UserController
 		
 		return mv;
 	}
-
+    
+	//Add new user
 	@RequestMapping(value = "/newUser", method=RequestMethod.POST)
 	public String addUser(@RequestParam("username") String username, @RequestParam("custname") String custname,
 			@RequestParam("email") String email, @RequestParam("password") String password,
@@ -60,27 +62,7 @@ public class UserController
 		muserdetail.setMobile(mobile);
 		muserdetail.setPassword(password);
 				
-		userDetailsDAO.validateUsername(username);
-		if(muserdetail!=null)
-		{
-			m.addAttribute("duplicateUsername","Username already exists!Please try with new one!");
-		}
-		
-		
-		userDetailsDAO.validateEmail(email);
-		if(muserdetail!=null)
-		{
-			m.addAttribute("duplicateEmail","Email already exists!Please enter different Email Id!");
-		}
-
-	    
-		userDetailsDAO.validateCustomername(custname);
-		if(muserdetail!=null)
-		{
-		    m.addAttribute("duplicateCustomername","Customername already exists!Please enter different Customername");	
-		}
-		
-		
+				
 		userDetailsDAO.insertUpdateUserDetail(muserdetail);
 		//List<UserDetail> list = userdetailDAO.getUserDetailDetails();
 		//m.addAttribute("UserDetail", list);

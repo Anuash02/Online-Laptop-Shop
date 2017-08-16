@@ -18,7 +18,7 @@ public class GlobalDefaultExceptionHandler
 	
 	
 	// global error handler
-	@ExceptionHandler(NoHandlerFoundException.class)
+	/*@ExceptionHandler(NoHandlerFoundException.class)
 	public String handlerNoHandlerFoundException(Model m) 
 	{
 		
@@ -34,7 +34,7 @@ public class GlobalDefaultExceptionHandler
 		
 		return "error" ;
 		
-	}
+	}*/
 	
 	       // Exception handler only for product search by using integer value only
 			@ExceptionHandler(ProductNotFoundException.class)
