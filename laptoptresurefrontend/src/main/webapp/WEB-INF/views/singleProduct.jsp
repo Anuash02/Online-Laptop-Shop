@@ -29,7 +29,7 @@ body {
 	<div class="row">
 
 		<!-- Display the product image -->
-		<div class="col-xs-12 col-sm-4">
+		<div class="col-xs-12 col-md-4">
 
 			<div class="thumbnail">
 

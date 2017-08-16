@@ -13,18 +13,18 @@ import org.springframework.stereotype.Repository;
 
 import com.niit.laptoptreasurebackend.model.Product;
 
-@Repository("productDAO")
-public class ProductDAO 
+@Repository("productDAO") //@Repository- Inform Spring that the annotated class is in the Data Access Layer  which will act as database repository.
+public class ProductDAO // DAO performs the standard operations on model objects
 {
-	@Autowired
+	@Autowired //Spring will inject beans into your code automatically.
 	SessionFactory sessionFactory;
 	
 	public ProductDAO (SessionFactory sessionFactory)
 	{
-	this.sessionFactory=sessionFactory;
+	this.sessionFactory=sessionFactory;//To Create Session object to use hibernate in an application SessionFactory is required.
 	}
 	
-	@Transactional
+	@Transactional //
 	public void insertUpdateProduct(Product product)
 	{
 

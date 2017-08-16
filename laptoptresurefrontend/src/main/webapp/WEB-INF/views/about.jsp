@@ -4,16 +4,10 @@
 
 <style>
 body {
-    background-color: #A52A2A;
+    background-color: #ac5353;
         font-family: "Times New Roman", Times, serif;
        
-background-image:
-repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
-repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
-linear-gradient(60deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1)),
-linear-gradient(120deg, rgba(0,0,0,.1) 25%, transparent 25%, transparent 75%, rgba(0,0,0,.1) 75%, rgba(0,0,0,.1));
-background-size: 70px 120px;
-}
+
 </style>
 
 
@@ -43,10 +37,10 @@ background-size: 70px 120px;
     <br>
     <div class="row">
 				<div class="col-sm-8" color="red">
-					<p><big><b>We are Leading Laptop Selling Team </b></big></p>
-					<p><big><b><i>E-Kart is India's leading e-commerce market with over</i></b></big></p>
+					<p><big><h1>We are Leading Laptop Selling Team </h1></big></p>
+					<p><big><h4><i>LaptopTreasure is India's leading e-commerce market with over 1 million products across 10+ categories.</i></h4></big></p>
 				
-					<p><big><b><i>1 million products across 10+categories.</i></b></big></p>
+					<p><big><h4><i>1 million products across 10+categories.</i></h4></big></p>
 				</div>
 				</div>
 				

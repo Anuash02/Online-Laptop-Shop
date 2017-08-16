@@ -22,12 +22,12 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 
 
 
-@Entity
-@Table
+@Entity //
+@Table //allows you to specify the details of the table that will be used to persist the entity in the database.
 public class Product
 {
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Id //will automatically determine the most appropriate primary key
+	@GeneratedValue(strategy = GenerationType.IDENTITY) //
      int prodid;
 	
 	   
@@ -51,8 +51,9 @@ public class Product
 	   @JsonIgnore
 	   int supid;
        
-       @Transient
-      MultipartFile file;
+       @Transient //For uploading file in product class doesn't require to be saved
+      MultipartFile file; //http client constructs request to send file over the server or used by browser & http client
+      // to upload files to the server
        
      public MultipartFile getFile() {
 		return file;

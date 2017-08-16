@@ -29,8 +29,8 @@ public class CategoryController
 	@RequestMapping(value = "/category" , method = RequestMethod.GET)
 	public String showManageCategory (@RequestParam(name = "operation" , required = false) String operation , Model m) {
 		
-		System.out.println("Redirecting to manageCategory.jsp from Category Controller section (showManageCategory method) .... ");
-		System.out.println();
+		System.out.println("showManageCategory method going to manageCategory.jsp from from this controller");
+		
 		
 		m.addAttribute("userClickManageCategory" , true) ;
 		m.addAttribute("title" , "Manage Categories Page") ;
@@ -56,8 +56,7 @@ public class CategoryController
 	@RequestMapping(value = "/category" , method = RequestMethod.POST)
 	public String handleCategorySubmission(@Valid @ModelAttribute("category") Category mCategory , BindingResult result , Model m) {
 	
-		System.out.println("Redirecting to manageCategory.jsp from Category Controller section (handleCategorySubmission method).... ");
-		System.out.println();
+		System.out.println("handleCategory method going to manageCategory.jsp from from this controller");
 		
 		// check if there are any errors 
 		if(result.hasErrors()) {
@@ -79,11 +78,10 @@ public class CategoryController
 	@RequestMapping(value = "/{catid}/category" , method = RequestMethod.GET) 
 	public String showEditCategory(@PathVariable int catid , Model m ) {
 			
-		System.out.println("Redirecting to manageCategory.jsp from Category Controller section (showEditCategory method) .... ");
-		System.out.println();
+		System.out.println("showEditCategory method going to manageCategory.jsp from from this controller");
 		
 		System.out.println("Editing the Category");
-		System.out.println();
+	
 		
 		m.addAttribute("userClickManageCategory" , true) ;
 			
@@ -104,11 +102,10 @@ public class CategoryController
 //	public String showDeleteCategory(@PathVariable int catid , Model m , @RequestParam(name = "operation" , required = false ) String operation) {
 	public String showDeleteCategory(@PathVariable int catid , Model m) {	 
 		
-		System.out.println("Redirecting to manageCategory.jsp from Category Controller section (showDeleteCategory method) .... ");
-		System.out.println();
+		System.out.println("showDeleteCategory method going to manageCategory.jsp from from this controller");
 		
 		System.out.println("Deleting the category ... ");
-		System.out.println();
+		
 		
 		/*
 		//m.addAttribute("userClickManageCategory" , true) ;

@@ -40,14 +40,14 @@ public class CartItemController
 	 @RequestMapping("/cart/getcart")
 	 public ModelAndView getCart(Model m)
 	 {
-		 System.out.println("I am in getCart method");
+		 System.out.println("I am in getCart method of CartItem controller");
 		 ModelAndView mv=new ModelAndView("index");
 		 mv.addObject("userClickCart", true);
 		 mv.addObject("title", "Cart");
 		 User user=(User)SecurityContextHolder.getContext().getAuthentication().getPrincipal();
 		 String username=user.getUsername();
 		 UserDetails userDetails=userDetailsDAO.getByUsername(username);
-		 System.out.println("I am getting the method of Cart here");
+		 System.out.println("Check for the method running or not");
 		 Cart cart=userDetails.getCart();
 		 m.addAttribute("cart", cart);
 		 return mv;
@@ -67,11 +67,11 @@ public class CartItemController
 			User user=(User)SecurityContextHolder.getContext().getAuthentication().getPrincipal();
 			 String username=user.getUsername();
 			 UserDetails userDetails=userDetailsDAO.getByUsername(username);
-			 System.out.println("I am getting the method of Cart here");
+			 System.out.println("checking addCartItem method running or not");
 			 Cart cart=userDetails.getCart();
-			 System.out.println("I am in line 72 in CartItemcontroller");
+			 System.out.println("Checking whether above line is running or not");
 			 List<CartItem> cartItems= cart.getCartItems(); //collection of cart items from CartItem table which is declared in cart model
-			 System.out.println("I am in line 74");
+			 System.out.println("Checking whether above List<CartItem> is running or not");
 			 System.out.println(cart.getCartItems().size());
 			 
 			//check purchased product is already existing in the cartitem table

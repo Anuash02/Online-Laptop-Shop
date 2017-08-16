@@ -29,13 +29,13 @@ import com.niit.laptoptreasurebackend.model.UserOrder;
 
 
 
-@Configuration
-@ComponentScan("com.niit.laptoptreasurebackend")
-@EnableTransactionManagement
+@Configuration //indicates that the class can be used by the Spring IoC container as a source of bean definitions.
+@ComponentScan("com.niit.laptoptreasurebackend") //@ComponentScan annotation to specify the base packages to scan.
+@EnableTransactionManagement //which makes it possible to fully use Java for the configuration
 public class DBConfig
 {     
-	   @Bean(name="dataSource")
-	  public DataSource getH2DataSource()
+	   @Bean(name="dataSource") //@Bean annotation tells Spring that a method annotated with @Bean will return an object that should be registered as a bean in the Spring application context. 
+	  public DataSource getH2DataSource() //it provides a facility of creating a pool of connections.
 	  {
            System.out.println("----Data Source Creation-----");
 		   DriverManagerDataSource dataSource = new DriverManagerDataSource();

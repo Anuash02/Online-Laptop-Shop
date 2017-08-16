@@ -29,6 +29,7 @@
 
 <!-- Bootstrap Readable theme -->
 <link href="${css}/bootstrap-readable-theme.css" rel="stylesheet">
+<link href="${css}/myapp.css" rel="stylesheet">
 
 <!-- Bootstrap DataTables -->
 <link href="${css}/dataTables.bootstrap.css" rel="stylesheet">

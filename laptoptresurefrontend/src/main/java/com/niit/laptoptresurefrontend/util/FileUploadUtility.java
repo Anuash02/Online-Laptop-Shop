@@ -9,7 +9,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 public class FileUploadUtility 
 {
-	private static  final String ABS_PATH = "D:\\Anushri Devops\\Github\\LaptopTreasure\\laptoptresurefrontend\\src\\main\\webapp\\Resources\\images/";
+	private static  final String ABS_PATH = "D:\\Anushri Devops\\Github\\Online Laptop Shop\\Online-Laptop-Shop\\laptoptresurefrontend\\src\\main\\webapp\\Resources\\images/";
     private static String REAL_PATH = "";
     
 	public static void uploadFile(HttpServletRequest request, MultipartFile file, String code) {

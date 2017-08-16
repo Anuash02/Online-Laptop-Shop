@@ -41,8 +41,8 @@ public class ProductController
 public String showManageProducts(@RequestParam(name = "operation" , required = false ) String operation , Model m ) 
 	{
 		
-		System.out.println("Redirecting to manageProducts.jsp from Product Controller section (showManageProducts method) .... ");
-		System.out.println();
+		System.out.println("showManageProducts method going to manageProducts.jsp from from this controller");
+		
 		
 		m.addAttribute("userClickManageProducts" , true) ;
 		
@@ -70,11 +70,11 @@ public String showManageProducts(@RequestParam(name = "operation" , required = f
 	@RequestMapping(value="/{prodid}/product", method=RequestMethod.GET)
 	public String showEditProducts(@PathVariable int prodid , Model m ) {
 		
-		System.out.println("Redirecting to manageProducts.jsp from Product Controller section (showEditProducts method) .... ");
-		System.out.println();
+		System.out.println("showManageProducts method going to manageProducts.jsp from from this controller");
 		
-		System.out.println("Editing the product");
-		System.out.println();
+		
+		System.out.println("Edit and update the product");
+		
 		
 		m.addAttribute("userClickManageProducts" , true) ;
 			
